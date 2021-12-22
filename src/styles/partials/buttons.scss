@@ -1,0 +1,27 @@
+.button-container {
+    position: relative;
+}
+.btn {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    font-family: $headline-font;
+    font-size: to-rem(22px);
+    text-transform: uppercase;
+    color: $dark-blue;
+    z-index: 2;
+}
+.stripe {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    width: 200px;
+    height: 16px;
+
+    background-color: $yellow;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0.4;
+}
