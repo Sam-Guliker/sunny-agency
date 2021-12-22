@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headline-font;
+}
+
+p, input, span, a {
+    font-family: $paragraph-font;
+    line-height: 1.4;
+    color: black;
+    text-decoration: none;
+}
+
+.heading-01 { 
+    font-size: to-rem(42px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 8px;
+
+    color: $white;
+    text-transform: uppercase;
+
+    padding-bottom: to-rem(60px);
+    
+    @include media('>desktop') { 
+        font-size: to-rem(90px);
+        text-align: left;
+    }
+}
+
+.heading-02 {
+    font-size: to-rem(24px);
+    padding-bottom: to-rem(12px);
+    font-weight: 400;
+}
+
+.heading-03 {
+    font-size: to-rem(18px);
+    font-weight: 500;
+}
+
+.product-title {
+    font-size: to-rem(36px);
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    outline: none;
+    border: 2px solid black;
+    font-family: $paragraph-font;
+    margin-bottom: to-rem(20px);
+    font-size: to-rem(28px);
+}
+
+.call-to-action {
+    background-color: #000;
+    color: white;
+}

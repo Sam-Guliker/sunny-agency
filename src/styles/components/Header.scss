@@ -1,0 +1,34 @@
+.header {
+    padding-top: to-rem(30px);
+    padding-bottom: to-rem(110px);
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        width: to-rem(160px);
+    }
+
+    .menu {
+        margin-top: to-rem(6px);
+        position: relative;
+
+        width: 30px;
+        height: 30px;
+        
+        .stripe {
+            position: absolute;
+            width: 100%;
+            height: to-rem(2px);
+            background-color: $white;
+        }
+
+        .stripe-2 {
+            top: to-rem(9px);
+        }
+
+        .stripe-3 {
+            top: to-rem(18px);
+        }
+    }
+
+}

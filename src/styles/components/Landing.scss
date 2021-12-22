@@ -1,0 +1,15 @@
+.landing-container {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../../assets/mobile/image-header.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+
+    text-align: center;
+
+    .arrow {
+        width: to-rem(56px);
+    }
+}
