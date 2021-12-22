@@ -32,7 +32,7 @@ function App() {
           special={true} 
           img={cherry} 
           title={'Graphic Design'} 
-          paragraph={'Great design makes you memorable. We deliver artowrk that underscores your brand message and captures potential client\'s attention'}
+          paragraph={'Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client\'s attention'}
           color={'green'}
           readMore={false}
         />

@@ -4,15 +4,40 @@
     
     .article {
         padding: 0 to-rem(20px);
-        padding-bottom: to-rem(50px);
+        padding-bottom: to-rem(50px); 
     }
+
+    .article.green {
+        color: $graphic-text;
+    }
+
+    .article.blue {
+        color: $photography-text;
+    }
+
+    .article .blue,
+    .article .green {
+        padding-bottom: 0;
+
+        p {
+            padding-bottom: 0;
+        }
+    }
+
 
     .no-background {
         position: absolute;
-        bottom: 20px;
+        bottom: 0;
     }
     
     .blok-image {
         padding-bottom: to-rem(40px);
+
+        height: calc(100% - 30px);
+    }
+
+    .no-padding {
+        padding-bottom: 0;
+        margin-bottom: to-rem(-10px);
     }
 }

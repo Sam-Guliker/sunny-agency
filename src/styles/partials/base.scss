@@ -25,11 +25,11 @@ svg {
 body {
   font-size: calc(16px + 1vw);
   font-weight: $base-lighter-font-weight;
-
   line-height: 1.4;
-  z-index: 2;
 
+  color: $gray;
   margin: auto;
+  z-index: 2;
 
   @include media('>phone') {
     min-height: 100vh;

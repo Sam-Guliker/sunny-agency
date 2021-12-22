@@ -33,6 +33,7 @@ p, input, span, a {
     font-size: to-rem(32px);
     font-weight: 400;
     padding-bottom: to-rem(20px);
+    color: $dark-blue;
 }
 
 .heading-03 {
@@ -52,5 +53,4 @@ p, input, span, a {
 .paragraph-01 {
     font-size: to-rem(18px);
     font-weight: 600;
-    color: $gray;
 }
