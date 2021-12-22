@@ -1,8 +1,15 @@
 .blok-container {
+    position: relative;
     text-align: center;
     
     .article {
         padding: 0 to-rem(20px);
+        padding-bottom: to-rem(50px);
+    }
+
+    .no-background {
+        position: absolute;
+        bottom: 20px;
     }
     
     .blok-image {

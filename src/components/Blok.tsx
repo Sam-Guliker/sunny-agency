@@ -1,19 +1,25 @@
 type BlokProps = {
+    special: boolean;
     img: string;
     title: string;
     paragraph: string;
+    readMore: boolean;
+    color: string;
 };
 
-export const Blok = ({img, title, paragraph}: BlokProps) => (
+export const Blok = ({readMore, color, special, img, title, paragraph}: BlokProps) => (
     <section className="blok-container">
         <img className="blok-image"src={img} />
-        <article className="article">
+        <article className={`article ${special ? 'no-background' :''}`}>
             <h2 className="heading-02">{title}</h2>
             <p className="paragraph-01">{paragraph}</p>
-            <div className="button-container">
+            
+            {readMore && <div className="button-container">
                 <a className="btn">Learn more</a>
                 <div className="stripe"></div>
             </div>
+            }
+            
         </article>
     </section>
 )
