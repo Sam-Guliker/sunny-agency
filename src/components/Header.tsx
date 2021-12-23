@@ -1,15 +1,12 @@
 import logo from '../assets/logo.svg'
+import menu from '../assets/icon-hamburger.svg'
 
 export default function Header() {
     return (
         <header className='header container'>
             <img className='logo' src={logo} alt='logo' />
             <a href='#'>
-                <div className="menu">
-                        <div className='stripe stripe-1'></div>
-                        <div className='stripe stripe-2'></div>
-                        <div className='stripe stripe-3'></div>
-                </div>
+                <img className='menu' src={menu} alt='logo' />
             </a>
 
         </header>
