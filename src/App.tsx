@@ -1,16 +1,19 @@
+// Components
 import {Landing} from './components/Landing';
 import {Blok} from './components/Blok';
+import {Testimonials} from './components/Testimonials';
+import {OutroImages} from './components/OutroImages';
 
+// Images
 import egg from './assets/mobile/image-transform.jpg'
 import redGlass from './assets/mobile/image-stand-out.jpg'
 import cherry from './assets/mobile/image-graphic-design.jpg'
 import orange from './assets/mobile/image-photography.jpg'
 
-
 function App() {
   return (
     <div className="App">
-      <Landing title={'we are creatives'} />
+      <Landing title="we are creatives" />
       <main>
         <Blok 
           special={false} 
@@ -24,7 +27,7 @@ function App() {
           special={false} 
           img={redGlass} 
           title={'Stand out to the right audience'} 
-          paragraph={'Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we\ll build and extend your brand in digital places.'}
+          paragraph={'Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, well build and extend your brand in digital places.'}
           readMore={true}
           color={'standard'}
         />
@@ -44,6 +47,8 @@ function App() {
           color={'blue'}
           readMore={false}
         />
+        <Testimonials/>
+        <OutroImages />
       </main>
     </div>
   );

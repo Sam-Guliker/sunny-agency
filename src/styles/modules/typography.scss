@@ -34,11 +34,22 @@ p, input, span, a {
     font-weight: 400;
     padding-bottom: to-rem(20px);
     color: $dark-blue;
+
+    &--testimonials {
+        color: $gray;
+        text-transform: uppercase;
+        font-size: to-rem(18px);
+        letter-spacing: 4px;
+
+        padding-bottom: to-rem(60px);
+    }
 }
 
 .heading-03 {
     font-size: to-rem(18px);
-    font-weight: 500;
+    color: $dark-blue;
+    font-weight: 800;
+    padding-bottom: to-rem(10px);
 }
 
 .product-title {
@@ -53,4 +64,15 @@ p, input, span, a {
 .paragraph-01 {
     font-size: to-rem(18px);
     font-weight: 600;
+
+    &--extra-p-30 {
+        padding-bottom: to-rem(30px);
+    }
+}
+
+.paragraph-02 {
+    font-size: to-rem(18px);
+    font-weight: 600;
+    color: $gray;
+    padding-bottom: to-rem(60px);
 }

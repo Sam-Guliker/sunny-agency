@@ -1,0 +1,13 @@
+.testimonials-container {
+    text-align: center;
+    padding: to-rem(70px) 0;
+
+    .testimonial-card-img {
+        display: inline-block;
+        border-radius: 100%;
+        width: to-rem(120px);
+        padding: 18px;
+
+        padding-bottom: to-rem(20px);
+    }
+}

@@ -1,0 +1,13 @@
+import milk from '../assets/mobile/image-gallery-milkbottles.jpg'
+import orangeTwo from '../assets/mobile/image-gallery-orange.jpg'
+import cone from '../assets/mobile/image-gallery-cone.jpg'
+import cubes from '../assets/mobile/image-gallery-sugar-cubes.jpg'
+
+export const OutroImages = () => (    
+    <section className="outro-images-container ">
+        <img className="image" src={milk} alt={milk} />
+        <img className="image" src={orangeTwo} alt={orangeTwo} />
+        <img className="image" src={cone} alt={cone} />
+        <img className="image" src={cubes} alt={cubes} />
+    </section>
+)
