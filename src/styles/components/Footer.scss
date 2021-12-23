@@ -1,0 +1,33 @@
+.footer-container {
+    color: $footer-text;
+    background-color: $footer-bg-color;
+    padding: to-rem(70px) to-rem(40px);
+    padding-bottom: to-rem(60px);
+    text-align: center;
+
+    .logo {
+        width: to-rem(200px);
+        padding-bottom: to-rem(40px);
+    }
+
+    .paragraph-01 {
+        color: $footer-text;
+        padding-bottom: to-rem(60px);
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+            padding-left: to-rem(60px);
+        }
+        a:first-of-type {
+            padding: 0;
+        }
+    }
+
+    .socials a {padding-left: to-rem(30px);}
+    .socials a:first-of-type { padding: 0;}
+}

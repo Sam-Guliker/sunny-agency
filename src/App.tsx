@@ -9,6 +9,7 @@ import egg from './assets/mobile/image-transform.jpg'
 import redGlass from './assets/mobile/image-stand-out.jpg'
 import cherry from './assets/mobile/image-graphic-design.jpg'
 import orange from './assets/mobile/image-photography.jpg'
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         />
         <Testimonials/>
         <OutroImages />
+        <Footer />
       </main>
     </div>
   );
