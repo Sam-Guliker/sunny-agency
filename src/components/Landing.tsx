@@ -1,4 +1,4 @@
-import Header from "./Header";
+import {Header} from "./Header";
 import logo from '../assets/icon-arrow-down.svg'
 
 export const Landing = ({title}: {title: string}) => (

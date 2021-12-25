@@ -9,11 +9,18 @@
     }
 
     .logo {
-        width: to-rem(160px);
+        width: 200px;
+        width: fit-content;
     }
 
     .menu {
         padding-bottom: 0;
     }
 
+}
+
+.header.container {
+    @include media(">desktop") {
+        padding: to-rem(30px) to-rem(30px);
+    }
 }

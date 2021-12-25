@@ -1,0 +1,18 @@
+.navigation {
+    
+    &__item {
+        color: $white;
+        font-size: to-rem(16px);
+        padding-right: to-rem(50px);
+
+        &--call-to-action {
+            background-color: $white;
+            padding: to-rem(10px) to-rem(20px);
+            text-transform: uppercase;
+            color: $dark-blue;
+            font-family: $headline-font;
+            border-radius: to-rem(20px);
+            font-size: to-rem(14px);
+        }
+    }
+}
