@@ -2,6 +2,25 @@
     text-align: center;
     padding: to-rem(70px) 0;
 
+    @include media('>desktop') { 
+        padding: to-rem(120px) 0;
+    }
+
+    .testimonial-wrapper {
+        display: block;
+        
+        @include media('>desktop') { 
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container {
+            @include media('>desktop') {
+                padding: 0 to-rem(30px);
+            }
+        }
+    }
+
     .testimonial-card-img {
         display: inline-block;
         border-radius: 100%;

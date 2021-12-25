@@ -3,7 +3,17 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
+    @include media('>tablet') { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
     .image {
         padding-bottom: 0;
+
+        @include media('>tablet') { 
+            width: 25%;
+        }
     }
 }

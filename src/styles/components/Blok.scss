@@ -1,10 +1,37 @@
 .blok-container {
     position: relative;
     text-align: center;
+
+    @include media('>desktop') { 
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    
+    &:nth-of-type(2) {
+        flex-direction: row;
+    }
+    
+    .article-container {
+        padding: to-rem(70px) to-rem(40px);
+        padding-top: to-rem(20px);
+
+
+        @include media('>desktop') { 
+            width: 50%;
+            padding: initial;
+            margin: auto;
+
+            padding: 0 to-rem(20px);
+            padding-bottom: to-rem(50px); 
+        }
+    }
     
     .article {
-        padding: 0 to-rem(20px);
-        padding-bottom: to-rem(50px); 
+        @include media('>desktop') { 
+            margin: auto;
+            width: to-rem(460px);
+        }
     }
 
     .article.green {
@@ -31,13 +58,53 @@
     }
     
     .blok-image {
+        width: 100%;
         padding-bottom: to-rem(40px);
-
         height: calc(100% - 30px);
+
+        @include media('>desktop') { 
+            width: 50%;
+            padding: 0;
+        }
     }
 
     .no-padding {
         padding-bottom: 0;
         margin-bottom: to-rem(-10px);
+    }
+}
+
+.blok-container.special {
+    @include media('>desktop') { 
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }   
+    .blok-image {
+        @include media('>desktop') { 
+            width: initial;
+        }  
+    }ππ
+    .article {
+        @include media('>desktop') { 
+            width: initial;
+        }
+    }
+    .article-container {
+        @include media('>desktop') { 
+            width: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .heading-01 {
+        @include media('>desktop') { 
+            font-size: to-rem(20px);
+        }
+    }
+
+    .paragraph-01 {
+        padding-bottom: 0;
     }
 }

@@ -35,6 +35,10 @@ p, input, span, a {
     padding-bottom: to-rem(20px);
     color: $dark-blue;
 
+    @include media('>desktop') { 
+        font-size: to-rem(43px);
+    }
+
     &--testimonials {
         color: $gray;
         text-transform: uppercase;
@@ -50,6 +54,10 @@ p, input, span, a {
     color: $dark-blue;
     font-weight: 800;
     padding-bottom: to-rem(10px);
+
+    @include media('>desktop') { 
+        font-weight: 600;
+    }
 }
 
 
@@ -60,6 +68,11 @@ p, input, span, a {
     &--extra-p-30 {
         padding-bottom: to-rem(30px);
     }
+    
+    @include media('>desktop') { 
+        font-weight: 400;
+        padding-bottom: to-rem(60px);
+    }
 }
 
 .paragraph-02 {
@@ -67,4 +80,8 @@ p, input, span, a {
     font-weight: 600;
     color: $gray;
     padding-bottom: to-rem(60px);
+
+    @include media('>desktop') { 
+        font-weight: 400;
+    }
 }
