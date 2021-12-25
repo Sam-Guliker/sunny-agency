@@ -9,7 +9,16 @@
 
     text-align: center;
 
+    @include media(">desktop") {
+        background-image: url('../../assets/desktop/image-header.jpg');
+        background-position-x: initial;
+        background-position-y: initial;
+    }
+
     .arrow {
         width: to-rem(56px);
+        @include media(">desktop") {
+            width: to-rem(30px);
+        }
     }
 }

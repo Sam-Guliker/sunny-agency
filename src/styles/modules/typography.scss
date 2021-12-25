@@ -24,8 +24,8 @@ p, input, span, a {
     padding-bottom: to-rem(60px);
     
     @include media('>desktop') { 
-        font-size: to-rem(90px);
-        text-align: left;
+        font-size: to-rem(60px);
+        padding-bottom: to-rem(130px);
     }
 }
 

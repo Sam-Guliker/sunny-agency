@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include media(">desktop") {
+        padding-bottom: to-rem(30px);
+    }
+
     .logo {
         width: to-rem(160px);
     }
