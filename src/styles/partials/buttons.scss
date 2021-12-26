@@ -1,6 +1,18 @@
 .button-container {
     position: relative;
     cursor: pointer;
+    width: fit-content;
+    margin: auto;
+    
+    @include media('>desktop') { 
+
+        margin: initial;
+        
+        &:hover .stripe {
+            opacity: 0.4;
+        }
+    }
+
 }
 
 .btn {
@@ -32,7 +44,11 @@
     z-index: 1;
     opacity: 0.4;
 
+    transition: 0.2s ease-in-out all;
+
     @include media('>desktop') { 
+        opacity: 0;
+        width: to-rem(150px);
         left: 0;
         transform: translateY(-50%) translateX(0);
     }

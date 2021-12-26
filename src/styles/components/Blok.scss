@@ -2,6 +2,10 @@
     position: relative;
     text-align: center;
 
+    &:nth-child(2) .stripe {
+        background-color: coral;
+    }
+
     @include media('>desktop') { 
         display: flex;
         flex-direction: row-reverse;

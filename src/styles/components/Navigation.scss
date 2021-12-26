@@ -13,6 +13,13 @@
             font-family: $headline-font;
             border-radius: to-rem(20px);
             font-size: to-rem(14px);
+
+            transition: 0.2s ease-in-out all;
+
+            &:hover {
+                background-color: #70CEFF;
+                color: $white;
+            }
         }
     }
 }

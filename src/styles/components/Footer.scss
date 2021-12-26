@@ -13,6 +13,10 @@
     .paragraph-01 {
         color: $footer-text;
         padding-bottom: to-rem(60px);
+
+        &:hover {
+            color: $white;
+        }
     }
 
     .footer-nav {
@@ -22,12 +26,21 @@
 
         a {
             padding-left: to-rem(60px);
+
+
         }
         a:first-of-type {
             padding: 0;
         }
     }
 
-    .socials a {padding-left: to-rem(30px);}
+    .socials a {
+        padding-left: to-rem(30px);
+        transition: 0.2s ease-in-out filter;
+
+        &:hover {
+            filter: brightness(0) invert(1);
+        }
+    }
     .socials a:first-of-type { padding: 0;}
 }
