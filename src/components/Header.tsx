@@ -2,13 +2,18 @@ import useWindowSize from '../components/lib/Resizer'
 import {Navigation} from '../components/Navigation'
 import {MobileNav} from '../components/MobileNav'
 
+import { gsap } from "gsap";
+import { useRef } from 'react';
+
 import logo from '../assets/logo.svg'
 import menu from '../assets/icon-hamburger.svg'
 
+
 export const Header = () => {
     const size:any = useWindowSize();
-    console.log(size.width)
     const tabletSize = 768
+    // const mobileNav = useRef<HTMLElement | undefined>(undefined);
+
 
     return (
         <>
