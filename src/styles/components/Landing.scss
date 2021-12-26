@@ -16,7 +16,7 @@
     }
 
     .arrow {
-        width: to-rem(56px);
+        width: to-rem(50px);
         @include media(">desktop") {
             width: to-rem(30px);
         }

@@ -1,0 +1,47 @@
+.mobile-navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    font-size: to-rem(24px);
+
+    position: absolute;
+    top: to-rem(120px);
+    width: calc(100% - 40px);
+    height: fit-content;
+
+    left: 50%;
+    transform: translateX(-50%);
+    padding: to-rem(30px) 0;
+
+    &__item {
+        padding: to-rem(20px) 0;
+        font-weight: 600;
+        color: $gray;
+    }
+
+    &--call-to-action {
+        background-color: $yellow;
+        padding: to-rem(16px) to-rem(20px);
+        text-transform: uppercase;
+        color: $dark-blue;
+        font-family: $headline-font;
+        border-radius: to-rem(30px);
+        font-size: to-rem(18px);
+        width: 40%;
+        margin: auto;
+        margin-bottom: to-rem(30px);
+        margin-top: to-rem(10px);
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: to-rem(0px);
+        top: to-rem(-30px);
+        width: 0;
+        height: 0;
+        border-bottom: 60px solid $white;
+        border-left: 60px solid transparent;
+    }
+
+}
