@@ -22,7 +22,14 @@ svg {
   width: 100%;
 }
 
+//for locomotive scroll position fixed is a fix o_O
+
+.App {
+  position: fixed;
+}
+
 body {
+  height: 100%;
   font-size: calc(16px + 1vw);
   font-weight: $base-lighter-font-weight;
   line-height: 1.4;
@@ -32,7 +39,7 @@ body {
   z-index: 2;
 
   @include media('>phone') {
-    min-height: 100vh;
+    min-height: 100%;
   }
 }
 
@@ -51,12 +58,6 @@ img {
   @include media('>desktop') { 
 
   }
-}
-
-main {
-  position: relative;
-  z-index: 3;
-  height: 100vh;
 }
 
 .section {

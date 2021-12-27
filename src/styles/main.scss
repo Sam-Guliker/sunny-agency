@@ -7,6 +7,9 @@
 // Partials
 @import "partials/reset.scss";
 
+// Third-party
+@import "partials/locomotive.scss";
+
 // Modules and Variables
 @import "modules/mixins.scss";
 @import "modules/variables.scss";
@@ -14,9 +17,6 @@
 @import "partials/buttons.scss";
 @import "partials/grids.scss";
 @import "partials/base.scss";
-
-
-// Third-party
 
 // Components
 @import "components/Landing.scss";

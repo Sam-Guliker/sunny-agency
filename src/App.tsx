@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 
 import { useRef } from 'react';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 // Images
 // mobile
@@ -23,13 +24,14 @@ import orangeBig from './assets/desktop/image-photography.jpg'
 
 function App() {
   const containerRef = useRef(null)
-
+  const { scroll } = useLocomotiveScroll()
 
   return (
     <LocomotiveScrollProvider
       options={
         {
           smooth: true,
+          multiplier: 0.8,
         // ... all available Locomotive Scroll instance options 
         }
       }

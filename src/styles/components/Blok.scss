@@ -1,6 +1,7 @@
 .blok-container {
     position: relative;
     text-align: center;
+    background-color: $white;
 
     &:nth-child(2) .stripe {
         background-color: coral;

@@ -8,17 +8,18 @@ import { useRef } from 'react';
 import logo from '../assets/logo.svg'
 import menu from '../assets/icon-hamburger.svg'
 
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
-export const Header = () => {
+
+export function Header () {
+    const { scroll } = useLocomotiveScroll()
+
     const size:any = useWindowSize();
     const tabletSize = 768
-    // const mobileNav = useRef<HTMLElement | undefined>(undefined);
-
-
     return (
         <>
             <header className='header container'>
-                <img className='logo' src={logo} alt='logo' />
+                <img data-scroll className='logo' src={logo} alt='logo' />
                 
                 { size.width < tabletSize && <a href='#'>
                         <img className='menu' src={menu} alt='logo' />
