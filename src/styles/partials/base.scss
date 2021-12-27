@@ -29,7 +29,7 @@ svg {
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   font-size: calc(16px + 1vw);
   font-weight: $base-lighter-font-weight;
   line-height: 1.4;
@@ -37,10 +37,6 @@ body {
   color: $gray;
   margin: auto;
   z-index: 2;
-
-  @include media('>phone') {
-    min-height: 100%;
-  }
 }
 
 img {
@@ -54,10 +50,6 @@ img {
 .container {
   position: relative;
   padding: 0 to-rem(20px);
-
-  @include media('>desktop') { 
-
-  }
 }
 
 .section {
