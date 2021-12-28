@@ -21,7 +21,6 @@ export function Blok ({readMore, color, special, img, title, paragraph, small, l
                 className={`blok-image ${special ? 'no-padding' : ''}` } 
                 src={img} 
                 small={small} 
-                medium={medium} 
                 large={large} 
                 alt={img} 
             />
