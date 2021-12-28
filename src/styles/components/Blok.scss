@@ -87,9 +87,9 @@
     }   
     .blok-image {
         @include media('>desktop') { 
-            width: initial;
-        }  
-    }ππ
+            width: 100%;
+        }
+    }
     .article {
         @include media('>desktop') { 
             width: initial;

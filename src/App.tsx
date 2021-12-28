@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+
 // Components
 import {Landing} from './components/Landing';
 import {Blok} from './components/Blok';
@@ -25,6 +27,10 @@ import orangeBig from './assets/desktop/image-photography.jpg'
 function App() {
   const containerRef = useRef(null)
   const { scroll } = useLocomotiveScroll()
+
+  useEffect(() => {
+    
+  });
 
   return (
     <LocomotiveScrollProvider

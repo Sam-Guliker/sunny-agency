@@ -14,6 +14,14 @@ export function ResponsiveImage ({small, medium, large, className, alt}: ImagePo
     const { scroll } = useLocomotiveScroll()
 
     return (
-        <img data-scroll className={className} src={small} srcSet={`${small} 300vw, ${medium} 768w, ${large} 1280w`} alt={alt}/>
+        <img 
+            data-scroll 
+            className={className} 
+            src={small} 
+            srcSet={`${small} 750w, ${large} 720w`} 
+            sizes="(max-width: 600) 750px, 720px"
+            alt={alt}
+            
+        />
     )
 } 
