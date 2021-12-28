@@ -57,7 +57,6 @@ function App() {
           special={false} 
           img={egg} 
           small={egg}
-          medium={egg}
           large={eggBig}
           title={'Transform your brand'} 
           paragraph={'We are a full-service creative agency specializing in helping brands grow fast. Engage your clinets through compelling visuals that do most of the markting for you'}
@@ -68,7 +67,6 @@ function App() {
           special={false} 
           img={redGlass} 
           small={redGlass}
-          medium={redGlass}
           large={redGlassBig}
           title={'Stand out to the right audience'} 
           paragraph={'Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, well build and extend your brand in digital places.'}
@@ -79,7 +77,6 @@ function App() {
           special={true} 
           img={cherry} 
           small={cherry}
-          medium={cherry}
           large={cherryBig}
           title={'Graphic Design'} 
           paragraph={'Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client\'s attention'}
@@ -90,7 +87,6 @@ function App() {
           special={true} 
           img={orange} 
           small={orange}
-          medium={orange}
           large={orangeBig}
           title={'Photography'} 
           paragraph={'Increase your credibility by getting most stunning, high-quality photos that improve your business image.'}

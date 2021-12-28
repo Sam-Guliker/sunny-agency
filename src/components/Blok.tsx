@@ -9,11 +9,10 @@ type BlokProps = {
     readMore: boolean;
     color: string;
     small: string,
-    medium: string,
     large: string,
 };
 
-export function Blok ({readMore, color, special, img, title, paragraph, small, medium, large}: BlokProps) {
+export function Blok ({readMore, color, special, img, title, paragraph, small, large}: BlokProps) {
     const { scroll } = useLocomotiveScroll()
 
     return (
