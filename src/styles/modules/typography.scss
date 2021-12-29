@@ -24,13 +24,13 @@ p, input, span, a {
     padding-bottom: to-rem(60px);
     
     @include media('>desktop') { 
-        font-size: to-rem(60px);
-        padding-bottom: to-rem(130px);
+        font-size: to-rem(46px);
+        padding-bottom: to-rem(67px);
     }
 }
 
 .heading-02 {
-    font-size: to-rem(32px);
+    font-size: to-rem(40px);
     font-weight: 400;
     padding-bottom: to-rem(20px);
     color: $dark-blue;

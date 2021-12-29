@@ -19,18 +19,20 @@
         }
 
         .container {
-            @include media('>desktop') {
-                padding: 0 to-rem(30px);
-            }
+            padding: 0 to-rem(30px);
         }
     }
 
     .testimonial-card-img {
         display: inline-block;
         border-radius: 100%;
-        width: to-rem(90px);
+        width: to-rem(130px);
         padding: 18px;
 
         margin-bottom: to-rem(40px);
+
+        @include media('>desktop') {
+            width: to-rem(90px);
+        }
     }
 }

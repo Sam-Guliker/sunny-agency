@@ -20,24 +20,22 @@
     width: 100%;
     padding: 1rem;
     font-family: $headline-font;
-    font-size: to-rem(22px);
+    font-size: to-rem(16px);
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: $dark-blue;
     z-index: 2;
 
-    @include media('>desktop') { 
-        font-size: to-rem(16px);
-    }
 }
 
 .stripe {
     position: absolute;
-    top: 80%;
+    top: 76%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 
-    width: 160px;
-    height: 16px;
+    width: to-rem(140px);
+    height: to-rem(10px);
 
     background-color: $yellow;
     border-radius: 10px;

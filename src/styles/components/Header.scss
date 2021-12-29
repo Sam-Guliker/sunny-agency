@@ -6,11 +6,11 @@
 
     @include media(">desktop") {
         padding: to-rem(30px) to-rem(30px);
-        padding-bottom: to-rem(60px);
+        padding-bottom: to-rem(70px);
     }
 
     .logo {
-        width: 200px;
+        width: to-rem(130px);
         width: fit-content;
     }
 
