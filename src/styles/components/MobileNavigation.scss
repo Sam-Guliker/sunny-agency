@@ -1,5 +1,5 @@
 .mobile-navigation {
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: $white;
     font-size: to-rem(24px);
@@ -44,4 +44,8 @@
         border-left: 60px solid transparent;
     }
 
+}
+
+.mobile-navigation.js-is-active {
+    display: flex;
 }

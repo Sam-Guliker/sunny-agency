@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import {Navigation} from '../components/Navigation'
 import {MobileNav} from '../components/MobileNav'
@@ -9,16 +9,17 @@ import menu from '../assets/icon-hamburger.svg'
 import useWindowSize from '../components/lib/Resizer'
 
 export function Header () {
+    const [active, isActive] = useState(false);
+
     const mobileNavPanel = useRef(null)
 
     const size:any = useWindowSize();
     const tabletSize = 768
 
     const onClickMenuHandler = (e:any) => {
-        if(size > tabletSize) return
-        else { 
-            
-        } 
+        console.log(active)
+        const currentState:boolean = active;
+        isActive(!currentState)
     }
 
     return (
@@ -35,7 +36,7 @@ export function Header () {
                 
             </header>
 
-            { size.width < tabletSize && <MobileNav />}
+            { size.width < tabletSize && <MobileNav active={active} />}
         </>
     )
 }
