@@ -13,6 +13,9 @@
         @include media('>desktop') { 
             display: flex;
             flex-direction: row;
+
+            width: 80%;
+            margin: auto;
         }
 
         .container {
@@ -25,9 +28,9 @@
     .testimonial-card-img {
         display: inline-block;
         border-radius: 100%;
-        width: to-rem(120px);
+        width: to-rem(90px);
         padding: 18px;
 
-        padding-bottom: to-rem(20px);
+        margin-bottom: to-rem(40px);
     }
 }

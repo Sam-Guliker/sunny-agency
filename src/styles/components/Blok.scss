@@ -28,7 +28,7 @@
             margin: auto;
 
             padding: 0 to-rem(20px);
-            padding-bottom: to-rem(50px); 
+            // padding-bottom: to-rem(50px); 
         }
     }
     
@@ -39,16 +39,17 @@
         }
     }
 
-    .article.green {
+    .article.green p{
         color: $graphic-text;
     }
 
-    .article.blue {
+    .article.blue p{
         color: $photography-text;
     }
 
     .article .blue,
     .article .green {
+        font-weight: 600;
         padding-bottom: 0;
 
         p {
@@ -97,9 +98,10 @@
     }
     .article-container {
         @include media('>desktop') { 
-            width: 70%;
+            width: 55%;
             left: 50%;
             transform: translateX(-50%);
+            padding-bottom: to-rem(60px);
         }
     }
 

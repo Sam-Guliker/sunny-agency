@@ -17,8 +17,8 @@ export function Footer() {
             <div className="socials">
                 <a href="#"><img className="img" src={facebook} /></a>
                 <a href="#"><img className="img" src={instagram} /></a>
-                <a href="#"><img className="img" src={pinterest} /></a>
                 <a href="#"><img className="img" src={twitter} /></a>
+                <a href="#"><img className="img" src={pinterest} /></a>
             </div>
         </footer>
     )      

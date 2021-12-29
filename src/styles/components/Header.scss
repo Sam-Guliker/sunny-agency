@@ -5,7 +5,8 @@
     justify-content: space-between;
 
     @include media(">desktop") {
-        padding-bottom: to-rem(30px);
+        padding: to-rem(30px) to-rem(30px);
+        padding-bottom: to-rem(60px);
     }
 
     .logo {
@@ -17,10 +18,4 @@
         padding-bottom: 0;
     }
 
-}
-
-.header.container {
-    @include media(">desktop") {
-        padding: to-rem(30px) to-rem(30px);
-    }
 }

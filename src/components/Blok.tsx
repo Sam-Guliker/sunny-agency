@@ -22,7 +22,7 @@ export function Blok ({readMore, color, special, img, title, paragraph, small, l
                 alt={img} 
             />
             <div className={`article-container ${special ? 'no-background' : ''} `}>
-                <article className={`article  ${color === 'green' ? 'green' : ''} ${color === 'blue' ? 'blue' : ''}`}>
+                <article className={`article ${color === 'green' ? 'green' : ''}${color === 'blue' ? 'blue' : ''}`}>
                     <h2 className="heading-02">{title}</h2>
                     <p className="paragraph-01">{paragraph}</p>
                     
