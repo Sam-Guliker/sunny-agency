@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 // Components
 import {Landing} from './components/Landing';
@@ -6,10 +6,6 @@ import {Blok} from './components/Blok';
 import {Testimonials} from './components/Testimonials';
 import {OutroImages} from './components/OutroImages';
 import { Footer } from './components/Footer';
-
-import { useRef } from 'react';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 // Images
 // mobile
@@ -25,32 +21,8 @@ import orangeBig from './assets/desktop/image-photography.jpg'
 
 
 function App() {
-  const containerRef = useRef(null)
-  const { scroll } = useLocomotiveScroll()
-
-  useEffect(() => {
-    
-  });
-
   return (
-    <LocomotiveScrollProvider
-      options={
-        {
-          smooth: true,
-          multiplier: 0.8,
-        // ... all available Locomotive Scroll instance options 
-        }
-      }
-      watch={
-        [
-        //..all the dependencies you want to watch to update the scroll.
-        //  Basicaly, you would want to watch page/location changes
-        //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
-        ]
-      }
-      containerRef={containerRef}
-    >
-    <div className="App" data-scroll-container ref={containerRef}>
+    <div className="App">
       <Landing title="we are creatives" />
       <main>
         <Blok 
@@ -98,7 +70,6 @@ function App() {
         <Footer />
       </main>
     </div>
-    </LocomotiveScrollProvider>
   );
 }
 

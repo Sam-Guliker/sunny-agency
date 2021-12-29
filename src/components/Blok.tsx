@@ -1,5 +1,4 @@
 import { ResponsiveImage } from "./lib/ResponsiveImage";
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 type BlokProps = {
     special: boolean;
@@ -13,10 +12,8 @@ type BlokProps = {
 };
 
 export function Blok ({readMore, color, special, img, title, paragraph, small, large}: BlokProps) {
-    const { scroll } = useLocomotiveScroll()
-
     return (
-        <section data-scroll-section className={`blok-container ${special ? 'special' : ''}`}>
+        <section className={`blok-container ${special ? 'special' : ''}`}>
             <ResponsiveImage 
                 className={`blok-image ${special ? 'no-padding' : ''}` } 
                 src={img} 
@@ -24,14 +21,14 @@ export function Blok ({readMore, color, special, img, title, paragraph, small, l
                 large={large} 
                 alt={img} 
             />
-            <div data-scroll className={`article-container ${special ? 'no-background' : ''} `}>
-                <article data-scroll className={`article  ${color === 'green' ? 'green' : ''} ${color === 'blue' ? 'blue' : ''}`}>
-                    <h2 data-scroll className="heading-02">{title}</h2>
-                    <p data-scroll className="paragraph-01">{paragraph}</p>
+            <div className={`article-container ${special ? 'no-background' : ''} `}>
+                <article className={`article  ${color === 'green' ? 'green' : ''} ${color === 'blue' ? 'blue' : ''}`}>
+                    <h2 className="heading-02">{title}</h2>
+                    <p className="paragraph-01">{paragraph}</p>
                     
-                    {readMore && <div data-scroll className="button-container">
-                        <a data-scroll className="btn">Learn more</a>
-                        <div data-scroll className="stripe"></div>
+                    {readMore && <div className="button-container">
+                        <a className="btn">Learn more</a>
+                        <div className="stripe"></div>
                     </div>
                     }
                     

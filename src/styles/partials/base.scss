@@ -24,10 +24,6 @@ svg {
 
 //for locomotive scroll position fixed is a fix o_O
 
-.App {
-  position: fixed;
-}
-
 body {
   min-height: 100%;
   font-size: calc(16px + 1vw);
@@ -43,6 +39,7 @@ img {
   max-width: 100%;
   padding-bottom: to-rem(20px);
 }
+
 .word-break {
   display: block;
 }

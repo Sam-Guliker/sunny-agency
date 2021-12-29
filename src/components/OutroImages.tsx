@@ -3,11 +3,7 @@ import orangeTwo from '../assets/mobile/image-gallery-orange.jpg'
 import cone from '../assets/mobile/image-gallery-cone.jpg'
 import cubes from '../assets/mobile/image-gallery-sugar-cubes.jpg'
 
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
-
 export function OutroImages(){
-    const { scroll } = useLocomotiveScroll()
-
     return (    
         <section data-scroll-section className="outro-images-container">
             <img data-scroll className="image" src={milk} alt={milk} />
