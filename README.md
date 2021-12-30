@@ -15,8 +15,6 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -28,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://sunny-agency-iq0h5za3c-samguliker.vercel.app/)
-- Live Site URL: [Add live site URL here](https://sunny-agency-iq0h5za3c-samguliker.vercel.app/)
+- [Solution URL](https://github.com/Sam-Guliker/sunny-agency)
+- [Live Site URL](https://sunny-agency-iq0h5za3c-samguliker.vercel.app/)
 
 ## My process
 
