@@ -8,7 +8,7 @@ import menu from '../assets/icon-hamburger.svg'
 
 import useWindowSize from '../components/lib/Resizer'
 
-const Header = forwardRef<HTMLElement>(({}, ref) => {
+const Header = forwardRef<HTMLElement>((ref) => {
         const [active, isActive] = useState(false);
     
         const mobileNavPanel = useRef(null)
@@ -26,16 +26,12 @@ const Header = forwardRef<HTMLElement>(({}, ref) => {
             <>
                 <header className='header container'>
                     <img className='logo' src={logo} alt='logo' />
-                    
                     { size.width < tabletSize && <a href='#' onClick={onClickMenuHandler} ref={mobileNavPanel} >
                             <img className='menu' src={menu} alt='menu' />
                         </a>
                     }
-    
                     { size.width > tabletSize && <Navigation /> }
-                    
                 </header>
-    
                 { size.width < tabletSize && <MobileNav active={active} />}
             </>
         )
