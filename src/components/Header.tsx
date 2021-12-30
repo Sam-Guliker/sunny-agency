@@ -26,7 +26,7 @@ const Header = forwardRef<HTMLElement>((ref) => {
             <>
                 <header className='header container'>
                     <img className='logo' src={logo} alt='logo' />
-                    { size.width < tabletSize && <a href='#' onClick={onClickMenuHandler} ref={mobileNavPanel} >
+                    { size.width < tabletSize && <a href='#' arial-abel="open mobile menu" onClick={onClickMenuHandler} ref={mobileNavPanel} >
                             <img className='menu' src={menu} alt='menu' />
                         </a>
                     }
