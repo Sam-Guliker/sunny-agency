@@ -9,15 +9,10 @@ import { Footer } from './components/Footer'
 // mobile
 import egg from './assets/mobile/image-transform.jpg'
 import redGlass from './assets/mobile/image-stand-out.jpg'
-import cherry from './assets/mobile/image-graphic-design.jpg'
-import orange from './assets/mobile/image-photography.jpg'
 
+// desktop
 import eggBig from './assets/desktop/image-transform.jpg'
 import redGlassBig from './assets/desktop/image-stand-out.jpg'
-import cherryBig from './assets/desktop/image-graphic-design.jpg'
-import orangeBig from './assets/desktop/image-photography.jpg'
-
-// third party
 
 function App() {
   return (
