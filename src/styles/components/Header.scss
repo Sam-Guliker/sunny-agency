@@ -6,7 +6,7 @@
 
     @include media(">desktop") {
         padding: to-rem(30px) to-rem(30px);
-        padding-bottom: to-rem(70px);
+        padding-bottom: to-rem(80px);
     }
 
     .logo {
@@ -17,5 +17,4 @@
     .menu {
         padding-bottom: 0;
     }
-
 }

@@ -25,7 +25,7 @@ p, input, span, a {
     
     @include media('>desktop') { 
         font-size: to-rem(46px);
-        padding-bottom: to-rem(67px);
+        padding-bottom: to-rem(110px);
     }
 }
 
@@ -76,12 +76,8 @@ p, input, span, a {
 }
 
 .paragraph-02 {
-    font-size: to-rem(18px);
+    font-size: to-rem(16px);
     font-weight: 600;
     color: $gray;
     padding-bottom: to-rem(60px);
-
-    @include media('>desktop') { 
-        font-weight: 400;
-    }
 }
