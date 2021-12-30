@@ -1,9 +1,9 @@
 // Components
-import {Landing} from './components/Landing';
-import {Blok} from './components/Blok';
-import {Testimonials} from './components/Testimonials';
-import {OutroImages} from './components/OutroImages';
-import { Footer } from './components/Footer';
+import {Landing} from './components/Landing'
+import {Blok} from './components/Blok'
+import {Testimonials} from './components/Testimonials'
+import {OutroImages} from './components/OutroImages'
+import { Footer } from './components/Footer'
 
 // Images
 // mobile
@@ -17,6 +17,7 @@ import redGlassBig from './assets/desktop/image-stand-out.jpg'
 import cherryBig from './assets/desktop/image-graphic-design.jpg'
 import orangeBig from './assets/desktop/image-photography.jpg'
 
+// third party
 
 function App() {
   return (
@@ -45,9 +46,9 @@ function App() {
         />
         <Blok 
           special={true} 
-          img={cherry} 
-          small={cherry}
-          large={cherryBig}
+          img={''} 
+          small={''}
+          large={''}
           title={'Graphic Design'} 
           paragraph={'Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client\'s attention'}
           color={'green'}
@@ -55,9 +56,9 @@ function App() {
         />
         <Blok 
           special={true} 
-          img={orange} 
-          small={orange}
-          large={orangeBig}
+          img={''} 
+          small={''}
+          large={''}
           title={'Photography'} 
           paragraph={'Increase your credibility by getting most stunning, high-quality photos that improve your business image.'}
           color={'blue'}

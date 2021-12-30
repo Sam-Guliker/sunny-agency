@@ -28,22 +28,19 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://sunny-agency-iq0h5za3c-samguliker.vercel.app/)
+- Live Site URL: [Add live site URL here](https://sunny-agency-iq0h5za3c-samguliker.vercel.app/)
 
 ## My process
+
+I started out to write all the components out on a whiteboard, I put in 1 hour for every mobile component and a half hour for the desktop version.
+It would take less time since it's only the CSS that needed to switch. After that I did all the hover effects.
+I tried to put in the locomototive scroll but unfortunatly it didn't work out, maybe for another project ;).
+After everything was finished up, I started to deploy the app and test it on different devices.
 
 ### Built with
 
@@ -53,60 +50,68 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Typescript](https://reactjs.org/) - JS library
+- [Sass](https://sass.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
+I haven't really used typescript before. It was a nice way to introduce the types and how to use them.
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+import { ResponsiveImage } from "./lib/ResponsiveImage";
+
+type BlokProps = {
+    special: boolean;
+    img: string;
+    title: string;
+    paragraph: string;
+    readMore: boolean;
+    color: string;
+    small: string,
+    large: string,
+};
+
+export function Blok ({readMore, color, special, img, title, paragraph, small, large}: BlokProps) {
+    return (
+        <section className={`blok-container ${special ? 'special' : ''}`}>
+            <ResponsiveImage 
+                className={`blok-image ${special ? 'no-padding' : ''}` } 
+                src={img} 
+                small={small} 
+                large={large} 
+                alt={img} 
+            />
+            <div className={`article-container ${special ? 'no-background' : ''} `}>
+                <article className={`article ${color === 'green' ? 'green' : ''}${color === 'blue' ? 'blue' : ''}`}>
+                    <h2 className="heading-02">{title}</h2>
+                    <p className="paragraph-01">{paragraph}</p>
+                    
+                    {readMore && <div className="button-container">
+                        <a className="btn">Learn more</a>
+                        <div className="stripe"></div>
+                    </div>
+                    }
+                    
+                </article>
+            </div>
+        </section>
+    )
+}
 };
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Another thing that kind of annoyed me was the srcSet.
+I tried to make it render different images for different sizes but the mac resolution kept changing my image.
+So I decided to do it with CSS instead.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I want to focus on making a bit more slick animations and I will keep using typescript and react together. It's a nice combo :)
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Mdn srcset images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - Seems like a good article but the images I had to use didn't work with it. But it's still worth using, knowing you can place different images for different sizes and improve the performance helps a lot.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@Sam-Guliker](https://www.frontendmentor.io/profile/Sam-Guliker)

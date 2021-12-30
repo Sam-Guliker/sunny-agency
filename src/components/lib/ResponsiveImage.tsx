@@ -13,7 +13,6 @@ export function ResponsiveImage ({small, large, className, alt}: ImagePops) {
             className={className} 
             src={small} 
             srcSet={`${small} 750w, ${large} 720w`} 
-            sizes="(max-width: 600) 750px, 720px"
             alt={alt}
         />
     )
