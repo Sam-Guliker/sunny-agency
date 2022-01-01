@@ -13,8 +13,7 @@ type BlokProps = {
 
 export function Blok ({readMore, color, special, img, title, paragraph, small, large}: BlokProps) {
     return (
-        <section className={`blok-container ${special ? 'special' : ''}`}>
-
+        <div className={`blok-container ${special ? 'special' : ''}`}>
             {img !== '' &&            
                 <ResponsiveImage 
                     className={`blok-image ${special ? 'no-padding' : ''}` } 
@@ -33,10 +32,9 @@ export function Blok ({readMore, color, special, img, title, paragraph, small, l
                         <a className="btn">Learn more</a>
                         <div className="stripe"></div>
                     </div>
-                    }
-                    
+                    }           
                 </article>
             </div>
-        </section>
+        </div>
     )
 }
