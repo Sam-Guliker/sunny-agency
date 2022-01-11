@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Sam-Guliker/sunny-agency)
-- [Live Site URL](https://sunny-agency-iq0h5za3c-samguliker.vercel.app/)
+- [Live Site URL](https://sunny-agency-beta.vercel.app/)
 
 ## My process
 
